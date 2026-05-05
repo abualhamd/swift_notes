@@ -10,6 +10,8 @@ extension Collection {
 @main
 struct first_project {
     static func main() {
-        print("Hello, world!")
+        // defining variables and constants
+        var a = 10
+        let b: Double = 20
     }
 }
