@@ -13,5 +13,10 @@ struct first_project {
         // defining variables and constants
         var a = 10
         let b: Double = 20
+
+
+        let c = Double(a) + b
+
+        print("The sum of a and b is: \(c)")
     }
 }
