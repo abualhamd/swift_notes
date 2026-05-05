@@ -10,13 +10,14 @@ extension Collection {
 @main
 struct first_project {
     static func main() {
-        // defining variables and constants
-        var a = 10
-        let b: Double = 20
-
-
-        let c = Double(a) + b
-
-        print("The sum of a and b is: \(c)")
+        // Optional Binding
+        var t = Double("xx")
+        if let sanitaizedT = t  {
+            print("The value of t is: \(sanitaizedT)")
+        } else {
+            print("Could not convert string to Double.")
+        }
+        var t2 = Double("8")
+        if let t2 {print ("The value of t2 is: \(t2)")} else {print("Could not convert string to Double.")}
     }
 }
